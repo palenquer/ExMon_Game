@@ -14,7 +14,7 @@ Após a criação do jogador, digite:
 
 ```ExMon.start_game(player)```
 
-Para dar início ao jogo e começar a batalha. Para começar a batalha digite:
+Para dar início ao jogo e começar a batalha. Para dar início a um movimento na batalha digite:
 ``` ExMon.make_move() ```
 Passando o movimento que o jogador quer que seja utilizado. Exemplo:
 
