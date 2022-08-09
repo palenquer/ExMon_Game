@@ -1,21 +1,26 @@
 # ExMon
 
-**TODO: Add description**
+Um jogo simples baseado em turnos desenvolvido através do curso "Aprenda Elixir criando um jogo e sua primeira API RESTful utilizando Phoenix com autenticação." por Rafael F. Camarda na plataforma Udemy.
 
-## Installation
+## Inicializando o projeto
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `ex_mon` to your list of dependencies in `mix.exs`:
+Para dar início ao projeto, digite ``` iex -S mix ``` no seu terminal e logo em seguida crie um jogador utilizando o seguinte exemplo: 
 
-```elixir
-def deps do
-  [
-    {:ex_mon, "~> 0.1.0"}
-  ]
-end
-```
+```player = ExMon.create_player("Paulo", :soco, :chute, :cura)```. 
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/ex_mon>.
+A função create_player recebe 4 parâmetros. O primeiro parâmetro é o nome do jogador, o segundo é o ataque médio, o terceiro é o ataque variável e o quarto e último é o movimento de cura.
+
+Após a criação do jogador, digite:
+
+```ExMon.start_game(player)```
+
+Para dar início ao jogo e começar a batalha. Para começar a batalha digite:
+``` ExMon.make_move() ```
+Passando o movimento que o jogador quer que seja utilizado. Exemplo:
+
+```ExMon.make_move(:chute)```
+
+Ao jogador ou o computador chegar a 0 de vida, o jogo termina.
+
+
 
