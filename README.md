@@ -20,7 +20,7 @@ Passando o movimento que o jogador quer que seja utilizado. Exemplo:
 
 ```ExMon.make_move(:chute)```
 
-Ao jogador ou o computador chegar a 0 de vida, o jogo termina.
+Logo após, o computador fará um movimento aleatório e então o jogador poderá jogar novamente. Ao jogador ou o computador chegar a 0 de vida, o jogo termina.
 
 
 
